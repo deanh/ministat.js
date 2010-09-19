@@ -8,7 +8,7 @@ var MiniStat = (function () {
             var hist = {};
             var dataset = {
                 sort: function () {
-                    data.sort(function (a,b) {return a - b;});
+                    data = data.sort(function (a,b) {return a - b;});
                     sorted = true;
                     return this;
                 },
@@ -25,7 +25,6 @@ var MiniStat = (function () {
 
                 median: function (inData) {
                     var myData = inData || data;
-                    var split;
                     if (myData.length % 2 === 0) {
                         return (myData[myData.length / 2 - 1] + myData[myData.length / 2]) / 2;
                     } else {
@@ -123,12 +122,16 @@ var MiniStat = (function () {
 
                 harmonicMean: function () {
                     var accum = 0, i = 0;
-                    for (i = 0; i < data.length[i]; i++) {
+                    for (i = 0; i < data.length; i++) {
+                        if (data[i] <= 0) {
+                            return undefined;
+                        }
                         accum = accum + (1/data[i]);
                     }
                     return data.length / accum;
                 }
             };
+            dataset.sort();
             datasets.push(dataset);
             return dataset;
         }
