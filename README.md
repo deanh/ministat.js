@@ -18,6 +18,7 @@ It's a straight port of my ruby gem by the same name.
 * Naive median implementation requires a sort, but it could be done in linear time. Patches welcome.
 * Missing tests. Currently testing against the Ruby version.
 
+
 ## Synopsis ##
 
 d = MiniStat.newData([1,2,3,4,5,6,7,7,6,5,4,4]);  // => Object
