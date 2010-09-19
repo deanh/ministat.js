@@ -6,7 +6,9 @@
 
 This is a simple package that generates simple statistical info on numerical data sets of a single variable. It’s nothing too fancy, but maybe just enough to coat your numbers with a thin layer of science. Or, at least to get you thinking about what it may take to do so.
 
-It's a stright port of my ruby gem by the same name: http://github.com/deanh/MiniStat
+It's a straight port of my ruby gem by the same name.
+
+* http://github.com/deanh/MiniStat
 
 ## Features / Problems ##
 
