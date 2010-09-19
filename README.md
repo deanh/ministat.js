@@ -23,17 +23,29 @@ It's a straight port of my ruby gem by the same name.
 
 <code>
 d = MiniStat.newData([1,2,3,4,5,6,7,7,6,5,4,4]);  // => Object
+
 d.getData();                                      // => [1, 2, 3, 4, 4, 4, 5, 5, 6, 6, 7, 7]
+
 d.median();                                       // => 4.5
+
 d.mean();                                         // => 4.5
+
 d.mode();                                         // => 4
+
 d.q1();                                           // => 3.5
+
 d.outliers();                                     // => []
+
 d.stdDev();                                       // => 1.8027756377319946
+
 d.variance();                                     // => 3.25
+
 d.geometricMean();                                // => 4.00310963496394
+
 d.harmonicMean();                                 // => 3.3311302048909455
+
 d.iqr();                                          // => 2.5
+
 d.q3();                                           // => 6
 </code>
 
