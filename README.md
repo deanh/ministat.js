@@ -21,6 +21,7 @@ It's a straight port of my ruby gem by the same name.
 
 ## Synopsis ##
 
+<code>
 d = MiniStat.newData([1,2,3,4,5,6,7,7,6,5,4,4]);  // => Object
 d.getData();                                      // => [1, 2, 3, 4, 4, 4, 5, 5, 6, 6, 7, 7]
 d.median();                                       // => 4.5
@@ -34,6 +35,7 @@ d.geometricMean();                                // => 4.00310963496394
 d.harmonicMean();                                 // => 3.3311302048909455
 d.iqr();                                          // => 2.5
 d.q3();                                           // => 6
+</code>
 
 ## LICENSE ##
 
