@@ -16,7 +16,7 @@ It's a straight port of my ruby gem by the same name.
 * It’s probably good enough
 * I haven’t profiled it against large data sets
 * Naive median implementation requires a sort, but it could be done in linear time. Patches welcome.
-* Missing tests. Working a unit testing framework that I like.
+* Missing tests. Currently testing against the Ruby version.
 
 ## Synopsis ##
 
